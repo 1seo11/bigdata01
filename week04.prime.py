@@ -11,7 +11,7 @@ def is_prime(number):
         if number % i == 0:  # If divisible, not a prime number
             return False
 
-    return True  # If no divisors found, the number is prime
+    return True
 
 
 number = int(input("숫자를 입력하세요: "))
