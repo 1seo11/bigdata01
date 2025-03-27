@@ -12,11 +12,10 @@ number = int(input("숫자를 입력하세요: "))
 is_prime = True
 
 if number >= 2:  # 숫자가 2 이상인 경우에만 검사
-    i = 2
-    while i * i <= number:
+   for i in range(2, int(number**0.5) + 1):16
         if number % i == 0:
             retrun = False  # 소수가 아님을 표시
-        print(i, end=" ")  # 약수 출력
+        #print(i, end=" ")  # 약수 출력
         i = i + 1  # 항상 i를 증가시킴
 else:
     retrun = False  # 숫자가 2 미만인 경우 소수가 아님
