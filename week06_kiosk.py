@@ -1,13 +1,10 @@
-# drinks = ["아이스 아메리카노", "카페 라떼", "수박 주스", "딸기 주스"]
-# prices = [1500, 2500, 4000, 4200]
+drinks = ["아이스 아메리카노", "카페 라떼", "수박 주스", "딸기 주스"]
+prices = [1500, 2500, 4000, 4200]
 
-drinks = ["아이스 아메리카노"]
-prices = [1500]
+# drinks = ["아이스 아메리카노"]
+# prices = [1500]
 total_price = 0
-# amounts = list()
-# for _ in range(len(drinks)):
-#     amounts.append(0)
-#amounts = [0 for _ in range(len(drinks))]  # list comprehension (리스트 축약)
+# amounts = [0 for _ in range(len(drinks))]
 amounts = [0] * len(drinks)
 
 def order_process(idx):
@@ -36,9 +33,9 @@ while True:
     else:
         print(f"{menu}번 메뉴는 존재하지 않습니다. 아래 메뉴에서 골라주세요")
 
-print("상품명 단가 수량 금액")
+print(f"{'상품명':^20}{'단가':^6}{'수량':^6}{'금액':^6}")
 for i in range(len(drinks)):
     if amounts[i] > 0:
-        print(f"{drinks[i]} {prices[i]} {amounts[i]} {prices[i] * amounts[i]}")
+        print(f"{drinks[i]:^20}{prices[i]:^6}{amounts[i]:^6}{prices[i] * amounts[i]:^6}")
 
 print(f"총 주문 금액 : {total_price}원")
