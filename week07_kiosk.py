@@ -29,7 +29,7 @@ def display_menu() -> str:
     return menu_texts
 
 
-def print_reseipt() ->None :
+def print_receipt() -> None:
     """
     영수증 출력 기능
     :return: 없음
@@ -52,4 +52,4 @@ while True:
     else:
         print(f"{menu}번 메뉴는 존재하지 않습니다. 아래 메뉴에서 골라주세요")
 
-print_reseipt()
+print_receipt()
