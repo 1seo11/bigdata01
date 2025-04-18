@@ -42,4 +42,8 @@ def print_receipt() -> None:
     print(f"총 주문 금액 : {total_price}원")
 
 def test() -> None:
+    """
+    앞으로 사용할 키오스크 내용
+    :return:
+    """
     pass
